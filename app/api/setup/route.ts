@@ -10,7 +10,7 @@ import {
 import { indexName } from '../../../config'
 
 export async function POST() {
-  const loader = new DirectoryLoader('./documents', {
+  const loader = new DirectoryLoader('./contracts', {
     ".txt": (path) => new TextLoader(path),
     ".md": (path) => new TextLoader(path),
     ".pdf": (path) => new PDFLoader(path)
